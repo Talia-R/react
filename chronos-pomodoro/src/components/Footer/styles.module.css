@@ -1,0 +1,30 @@
+.footer{
+    margin-top: 2.4rem;
+    display: flex;
+    gap: 1.2rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer a{
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    color: var(--text-default);
+    text-decoration: none;
+}
+
+.footer a svg{
+    transition: all .2s ease-in-out;
+
+}
+
+.footer a:hover{
+    color: var(--text-muted);
+
+}
+
+.footer a:hover svg{
+    transform: scale(1.1);
+    color: var(--text-default);
+}

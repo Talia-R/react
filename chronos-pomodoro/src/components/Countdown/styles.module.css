@@ -1,0 +1,6 @@
+.countdown{
+    color: var(--gray-100);
+    font-size: 14rem;
+    font-size: clamp(8rem, 30vw, 14rem);
+    font-weight: bold;
+}
