@@ -1,5 +1,5 @@
 import { History, HomeIcon, Settings, Sun } from "lucide-react";
-import style from './IconsSection.module.css'
+import style from './styles.module.css'
 
 export function IconsSection(){
     return(

@@ -1,5 +1,5 @@
 import { TimerIcon } from "lucide-react";
-import style from "./Title.module.css";
+import style from "./styles.module.css";
 
 export function Title(){
     return (

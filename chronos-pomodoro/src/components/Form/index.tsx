@@ -1,4 +1,4 @@
-import styles from "./Form.module.css"
+import styles from "./styles.module.css"
 
 type FormProps = {
     children: React.ReactNode;

@@ -1,5 +1,5 @@
 import { Heading } from "./components/Heading";
-import { Container } from "./components/Container"
+import { Container } from "./components/Container";
 import { IconsSection } from "./components/IconsSection"
 import { Timer } from "./components/Timer"
 import { Title } from "./components/Title";
