@@ -9,8 +9,7 @@ import { Cycle } from "./components/Cycle"
 import { Button } from "./components/Button";
 import { Footer } from "./components/Footer";
 import { PlayIcon } from "lucide-react";
-
-
+import { useState } from "react";
 
 import './styles/theme.css';
 import './styles/global.css';
@@ -24,7 +23,7 @@ export function App(){
                 <Countdown/>
                 <form>
                     <div>
-                        <Input description="task" id="task" type="text"/>
+                        <Input labelText="task" id="task" type="text" placeholder="Digite algo"/>
                     </div>
                     <Summary/>
                     <Cycle/>

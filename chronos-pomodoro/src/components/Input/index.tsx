@@ -1,16 +1,17 @@
 import styles from "./styles.module.css"
 
 type InputProps = {
-    description: string;
+    labelText: string;
     id : string;
+    placeholder: string;
 } & React.ComponentProps<'input'>
 
-export function Input({ description , id, type } : InputProps){
+export function Input({ labelText , id, type, placeholder } : InputProps){
 
     return(
         <div className={styles['input-container']}>
-            <label htmlFor={id}>{description}</label>
-            <input id={id} type={type}/>
+            <label htmlFor={id}>{labelText}</label>
+            <input id={id} type={type} placeholder={placeholder}/>
         </div>
     )
 }

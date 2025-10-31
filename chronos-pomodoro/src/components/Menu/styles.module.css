@@ -1,9 +1,9 @@
-.icones-container{
+.menu-container{
     display: flex;
     gap: 2rem;
 }
 
-.icones-container div{
+.menu-Link{
     background-color: var(--primary);
     border-radius: 0.5rem;
     cursor: pointer;
@@ -14,10 +14,10 @@
 
 }
 
-.icones-container div:hover{
+.menu-Link:hover{
     transform: scale(1.1);
 }
 
-.icones-container svg{
+.menu-Link svg{
     color: var(--text-over-primary);
 }
