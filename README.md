@@ -32,7 +32,7 @@ It’s a simple yet effective way to practice component structure, state managem
   
   - Destructuring props
   
-  - React hooks (coming soon 🚧)
+  - React hooks
 
 ## Next Steps
 
