@@ -8,7 +8,7 @@ export function MainForm(){
     return (
         <form>
             <div>
-            <Input labelText="task" id="task" type="text" placeholder="Digite algo"/>
+            <Input labelText="" id="task" type="text" placeholder="Digite algo"/>
             </div>
             <Summary/>
             <Cycle/>

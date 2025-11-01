@@ -6,12 +6,12 @@ type InputProps = {
     placeholder: string;
 } & React.ComponentProps<'input'>
 
-export function Input({ labelText , id, type, placeholder } : InputProps){
+export function Input({ labelText , id, type, placeholder, ...rest } : InputProps){
 
     return(
         <div className={styles['input-container']}>
             <label htmlFor={id}>{labelText}</label>
-            <input id={id} type={type} placeholder={placeholder}/>
+            <input id={id} type={type} placeholder={placeholder} {...rest}/>
         </div>
     )
 }

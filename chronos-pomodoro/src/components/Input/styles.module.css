@@ -23,6 +23,11 @@
 }
 
 .input-container input:focus{
-    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
-    background-color: var(--gray-400);
+    box-shadow: var(--box-shadow);
+    background-color: var(--input-bg);
+}
+
+.input:disabled{
+    border-bottom: 0.2rem solid var(--disabled);
+    color: var(--text-muted);
 }

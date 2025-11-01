@@ -34,6 +34,9 @@
 
   --disabled: #555f7d;
   --text-disabled: #aab3cc;
+
+  --input-bg: #555f7d;
+  --box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);;
 }
 
 :root[data-theme='light'] {
@@ -52,4 +55,7 @@
 
   --link-color: #0b8a60;
   --link-hover: #065f46;
+
+  --input-bg: #aab3cc;
+  --box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
