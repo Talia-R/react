@@ -15,3 +15,20 @@
     gap: 1.6rem;
 }
 
+.cycle-item{
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+}
+
+.workTime{
+    background-color: var(--warning);
+}
+
+.shortBreakTime{
+    background-color: var(--primary);
+}
+
+.longBreakTime{
+    background-color: var(--info);
+}
