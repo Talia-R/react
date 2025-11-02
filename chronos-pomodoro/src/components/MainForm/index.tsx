@@ -1,5 +1,5 @@
 import { PlayIcon } from "lucide-react";
-import { Button } from "../Button";
+import { MainButton } from "../MainButton";
 import { Cycle } from "../Cycle";
 import { Input } from "../Input";
 import { Summary } from "../Summary";
@@ -12,9 +12,7 @@ export function MainForm(){
             </div>
             <Summary/>
             <Cycle/>
-            <Button>
-            <PlayIcon/>
-            </Button>
+            <MainButton icon={<PlayIcon/>} color="green"/>       
         </form>
     )
 }

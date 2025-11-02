@@ -12,12 +12,10 @@
     gap: 1.2rem;
     color: var(--text-default);
     text-decoration: none;
-}
-
-.footer a svg{
-    transition: all .2s ease-in-out;
+    transition: all .2s ease;
 
 }
+
 
 .footer a:hover{
     color: var(--text-muted);
@@ -26,5 +24,4 @@
 
 .footer a:hover svg{
     transform: scale(1.1);
-    color: var(--text-default);
 }
