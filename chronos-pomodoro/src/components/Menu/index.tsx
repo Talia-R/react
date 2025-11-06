@@ -3,32 +3,31 @@ import styles from './styles.module.css'
 import { useState, useEffect } from "react";
 
 type AvailableThemes = 'dark' | 'light';
+
 export function Menu(){
     const [theme, setTheme] = useState<AvailableThemes>(() => {
-        const storageTheme = localStorage.getItem("theme") as AvailableThemes || "dark"
+       const storageTheme = localStorage.getItem("theme") as AvailableThemes || "dark" ;
         return storageTheme;
-
     });
 
-    const nextThemeIcon = {
-        dark: <SunIcon/>,
-        light: <MoonIcon/>
-
-    }
-
-    function handleThemeChange(
-        event: React.MouseEvent<HTMLAnchorElement, MouseEvent>
-    ){
+    function handleThemeChange(event: React.MouseEvent<HTMLAnchorElement, MouseEvent>){
         event.preventDefault();
 
-        setTheme(prevTheme =>prevTheme === 'dark' ? 'light' : 'dark')
+        setTheme(prevTheme => {
+            const nextTheme = prevTheme === 'dark' ? 'light' : 'dark';
+            return nextTheme;
+        })
+
+    }
+    const nextThemeIcon = {
+        "dark": <SunIcon/>,
+        "light": <MoonIcon/>
     }
 
-
-    useEffect(() => {
-        document.documentElement.setAttribute('data-theme', theme)
-        localStorage.setItem('theme', theme)
-    }, [theme]);
+    useEffect(()=> {
+        document.documentElement.setAttribute('data-theme', theme);
+        localStorage.setItem("theme", theme)
+    }),[theme]
 
     return(
         <nav className={styles['menu-container']}>
