@@ -1,0 +1,26 @@
+.button {
+    background-color: var(--primary);
+    color: var(--text-over-primary);
+    border: none;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    margin-top: 2.4rem;
+    width: 100%;
+    padding: 0.5rem 8rem;
+    transition: all .3s ease-in-out;
+}
+
+.button:hover {
+    transform: scale(1.1);
+}
+
+.green {
+    background-color: var(--primary);
+    color: var(--text-over-primary);
+}
+
+.red {
+    background-color: var(--error);
+    color: var(--text-over-error);
+}
+
